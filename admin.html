@@ -1,0 +1,6 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Panel</title><link rel="stylesheet" href="css/style.css"></head><body>
+<nav><div class="logo">Admin Panel</div><div class="nav-links"><a href="index.html">Home</a><a href="#" onclick="logout()">Logout</a></div></nav>
+<div class="dashboard"><h2>Admin Dashboard</h2><p>Logged in as: <b>admin</b></p>
+<div class="card"><h3>All Registered Users</h3><div id="userList"></div><button onclick="clearUsers()" class="btn danger">Clear All Users (except admin)</button></div></div>
+<script src="js/auth.js"></script><script>checkAuth('admin'); loadUsers();</script></body></html>

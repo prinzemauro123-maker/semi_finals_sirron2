@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Register</title><link rel="stylesheet" href="css/style.css"></head><body>
+<nav><div class="logo">REM BEST GIRL</div><div class="nav-links"><a href="index.html">Home</a><a href="login.html">Login</a><a href="register.html" class="active">Register</a></div></nav>
+<div class="form-container">
+<h2>Create Account</h2>
+<form onsubmit="return handleRegister(event)">
+<input type="text" id="regName" placeholder="Full Name" required>
+<input type="text" id="regUser" placeholder="Username" required>
+<input type="password" id="regPass" placeholder="Password" required>
+<select id="regRole" required><option value="user">User Account</option><option value="admin">Admin Account</option></select>
+<button type="submit" class="btn primary full">Register</button>
+<p id="regMsg"></p>
+<p>Already have account? <a href="login.html">Login here</a></p>
+<p class="hint">Default Admin: <b>admin / 123</b></p>
+</form></div><script src="js/auth.js"></script></body></html>
